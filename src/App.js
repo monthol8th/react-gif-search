@@ -44,8 +44,8 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="greeting">
-                <SearchBar onTermChange={this.handleTermChange.bind(this)} />
+            <div>
+                <SearchBar  onTermChange={this.handleTermChange.bind(this)} />
                 <GifList    gifs={this.state.gifs}
                             onGifSelect={this.openModal.bind(this) } />
                 <GifModal   modalIsOpen={this.state.modalIsOpen}
